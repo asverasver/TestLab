@@ -13,12 +13,20 @@ public class Employee {
     }
 
     public boolean equals(Object obj) {
-        Employee employee = (Employee) obj;
         boolean status = false;
-        if(this.name.equalsIgnoreCase(employee.name)
-                && this.salary == employee.salary) {
-            status = true;
+        try {
+            Employee employee = (Employee) obj;
+
+            if (this.name.equalsIgnoreCase(employee.name)
+                    && this.employeeId == employee.employeeId
+                    && this.salary == employee.salary) {
+                status = true;
+            }
         }
+        catch (Exception e) {
+            status = false;
+        }
+
         return status;
     }
 

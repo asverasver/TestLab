@@ -1,9 +1,9 @@
-package utils;
+package utilities;
 
-// Java code to illustrate how to reverse
-// an array without affecting special characters.
+// Java code to illustrate how to reverse an array without affecting special characters.
 // Taken from: https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
-class GFG
+
+public class GFG
 {
     public static void reverse(char str[])
     {

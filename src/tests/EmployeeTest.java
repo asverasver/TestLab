@@ -2,7 +2,10 @@ package tests;
 
 import ERP.Employee;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 class EmployeeTest {
 
@@ -16,7 +19,13 @@ class EmployeeTest {
     @Test
     public void testEmployeeEquals() {
         Employee testEmployee2 = new Employee(2, "Joseph", 150000);
-        assertTrue(testEmployee2.equals(testEmployee1));
+        assertFalse(testEmployee2.equals(testEmployee1));
+    }
+
+    @Test
+    public void testEmployeeEqualsNull() {
+        Employee testEmployee2 = null;
+        assertFalse(testEmployee1.equals(testEmployee2));
     }
 
 }

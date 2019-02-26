@@ -20,7 +20,7 @@ public class GFG
             else if(!Character.isAlphabetic(str[r]))
                 r--;
 
-                // Both str[l] and str[r] are not spacial
+            // Both str[l] and str[r] are not spacial
             else
             {
                 char tmp = str[l];
